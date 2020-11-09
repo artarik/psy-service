@@ -1,4 +1,5 @@
-﻿using System;
+﻿using psy_l1.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,11 @@ namespace psy_l1.Controllers
 {
     public class HomeController : Controller
     {
+        PsyServiceContext db = new PsyServiceContext();
         public ActionResult Index()
         {
+            IEnumerable<PsyService> services = db.PsyServices;
+            ViewBag.PsyServices = services; 
             return View();
         }
 

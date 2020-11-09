@@ -133,6 +133,7 @@
     </Compile>
     <Compile Include="Models\PsyService.cs" />
     <Compile Include="Models\PsyServiceContext.cs" />
+    <Compile Include="Models\PsyServiceInitializer.cs" />
     <Compile Include="Models\Purchase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

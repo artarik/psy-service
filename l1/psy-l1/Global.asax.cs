@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Data.Entity;
+using psy_l1.Models;
 
 namespace psy_l1
 {
@@ -12,6 +14,7 @@ namespace psy_l1
     {
         protected void Application_Start()
         {
+            Database.SetInitializer(new PsyServiceInitializer());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
