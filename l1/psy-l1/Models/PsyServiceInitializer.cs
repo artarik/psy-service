@@ -10,10 +10,10 @@ namespace psy_l1.Models
     {
         protected override void Seed(PsyServiceContext db)
         {
-            db.PsyServices.Add(new PsyService {Name = "Услуга 1 ", Type = "Взрослые", Price = 2000 });
-            db.PsyServices.Add(new PsyService {Name = "Услуга 2 ", Type = "Дошкольники", Price = 1000 });
-            db.PsyServices.Add(new PsyService {Name = "Услуга 3 ", Type = "Школьники", Price = 1500 });
-            db.PsyServices.Add(new PsyService {Name = "Услуга 4", Type = "Бабушки и Дедушки", Price = 1200 });
+            db.PsyServices.Add(new PsyService {Name = "Консультация Online", Type = "Взрослые", Price = 1500 });
+            db.PsyServices.Add(new PsyService {Name = "Завтрак с психологом", Type = "Взрослые", Price = 1000 });
+            db.PsyServices.Add(new PsyService {Name = "Консультативная встреча", Type = "Взрослые", Price = 2000 });
+            db.PsyServices.Add(new PsyService {Name = "Игра МАК", Type = "Взрослые", Price = 2000 });
             base.Seed(db);
 
         }

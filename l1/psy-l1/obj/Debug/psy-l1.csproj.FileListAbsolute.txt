@@ -169,8 +169,8 @@ E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\bin\ru\System.Web.Razo
 E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\bin\ru\System.Web.WebPages.resources.dll
 E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\bin\ru\System.Web.WebPages.Deployment.resources.dll
 E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\bin\ru\System.Web.WebPages.Razor.resources.dll
-E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\obj\Debug\psy-l1.csprojAssemblyReference.cache
 E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\obj\Debug\psy-l1.csproj.CoreCompileInputs.cache
 E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\obj\Debug\psy-l1.csproj.CopyComplete
 E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\obj\Debug\psy-l1.dll
 E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\obj\Debug\psy-l1.pdb
+E:\home\a.starik\SDO\c#\labs\github\psy-service\l1\psy-l1\obj\Debug\psy-l1.csprojAssemblyReference.cache
