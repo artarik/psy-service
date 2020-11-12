@@ -1,0 +1,83 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Заказ услуги</title>
+</head>
+<body>
+    <div>
+        <h3>Форма заказа услуги</h3>
+                            
+            @using (Html.BeginForm("Order", "Home", FormMethod.Post))
+            {
+            @Html.Label( "Код услуги " + ViewBag.PsyServiceId as string)   
+
+    <table>
+        <tr>
+            <td>
+                <p>Введите Ваше имя</p>
+            </td>
+            <td>
+                @Html.TextBox("Person")
+            </td>
+            <td>
+                @Html.RadioButton("SurnameBool", "yes")
+                <span>Указать Фамилию</span>
+                @Html.RadioButton("SurnameBool", "no")
+                <span>Не указывать фамилию</span>
+            </td>
+        </tr>
+        <tr>
+            <td><p>Коротко опишите проблему</p></td>
+            <td>
+                @Html.TextArea("Description", "", 2, 22, null)
+            </td>
+        </tr>
+        <tr>
+            <td><p>Введите кодовое слово</p></td>
+            <td>
+                @Html.Password("phrase")
+            </td>
+
+        </tr>
+        <tr>
+            <td><p>Выберите из списка ниже темы, подходящие Вашей ситуации</p></td>
+            <td>
+                @Html.ListBox("themes", new MultiSelectList(new string[] { "Возрастной конфиликт", "Проблема отцов и детей", "'Я все знаю'", "Отношения" }))
+
+            </td>
+
+        </tr>
+        <tr>
+            <td><p>Выберите свой пол</p></td>
+            <td>
+                @Html.DropDownList("gender", new SelectList(new string[] { "мужчина", "женщина" }))
+            </td>
+
+        </tr>
+        <tr>
+
+            <td>
+                <p>Я подтверждаю, что данные введены верно</p>
+            </td>
+            <td>
+                @Html.CheckBox("ans", false)
+            </td>
+
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Отправить" />
+            </td>
+        </tr>
+    </table>
+
+            }
+    </div>
+</body>
+</html>
+

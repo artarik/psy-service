@@ -1,0 +1,13 @@
+﻿@{
+    Layout = null;
+}
+
+
+@model IEnumerable<string>
+    <h2>Список категорий</h2>
+<ul>
+    @foreach (string type in Model)
+    {
+        <li>@type</li>
+    }
+</ul>
