@@ -1,0 +1,63 @@
+﻿@model psy.Models.ServiceFilterList
+
+@{
+    ViewBag.Title = "FilterView";
+}
+
+
+<h2>Фильтрация</h2>
+<p>
+    @Html.ActionLink("Добавить услугу", "Create")
+</p>
+
+<form method="get">
+    <div>
+
+        <label>Тип:</label>
+        @Html.DropDownList("type", Model.Types as SelectList)
+        <input type="submit"value="Отфильтровать" />
+    </div>
+
+</form>
+
+<table class="table">
+    <tr>
+        <th>
+            Тип услуги
+        </th>
+        <th>
+            Название услуги
+        </th>
+        <th>
+            Стоимость
+        </th>
+        <th>
+            Длительность
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Services)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type.TypeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.ActionLink("Редактировать", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Подробнее", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Удалить", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
